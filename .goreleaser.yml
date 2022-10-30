@@ -46,5 +46,5 @@ archives:
 
 release:
   github:
-    owner: wyattjoh
+    owner: thomasmhofmann
     name: cloudflare-ddns
