@@ -35,7 +35,7 @@ func GetRecord(ctx context.Context, api *cloudflare.API, domainName string) (*cl
 
 	// Print zone details
 	dnsRecords, err := api.DNSRecords(ctx, zoneID, cloudflare.DNSRecord{
-		Name: domainName,
+		Name: domainName, Type: "A"
 	})
 	if err != nil {
 		return nil, errors.Wrap(err, "could not locate dns record for zone")
